@@ -2,9 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 17px;
-  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
   color: #000000;
   background-color: #ffffff;
 }
@@ -27,44 +27,77 @@ body {
   background-color: #ba2732;
 }
 
+.search {
+  background-color: #293449;
+}
+
+.search:hover {
+  background-color: #212a3a;
+}
+
+.search:active {
+  background-color: #293449;
+}
+
 form input:focus {
   color: #000000;
   background-color: #ffffff;
 }
 
-.button {
+.marker-navigation:hover {
+  background-color: #212a3a;
+}
+
+.marker-navigation:active {
+  color: #8b8e94;
+  background-color: #161d29;
+}
+
+.cart-navigation:hover {
+  background-color: #212a3a;
+}
+
+.cart-navigation:active {
+  color: #8b8e94;
+  background-color: #161d29;
+}
+
+.site-navigation .button {
   background-color: #63a63e;
 }
 
-.button:hover {
+.site-navigation .button:hover {
   background-color: #5fbb2d;
 }
 
-.button:active {
+.site-navigation .button:active {
   background-color: #518534;
 }
 
 .text {
-  background-color: #f2f6f8;
+  background-color: #f3f7f8;
 }
 
-.heading-1 {
+.heading-index {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.text-1 {
+.about {
   font-size: 13px;
   line-height: 24px;
 }
 
-.list-1 {
+.list-about {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
 }
 
-.button-1 {
+.button-index {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -72,11 +105,11 @@ form input:focus {
   text-decoration: none;
 }
 
-.button-1:hover {
+.button-index:hover {
   background-color: #ca2c37;
 }
 
-.button-1:active {
+.button-index:active {
   background-color: #ba2732;
 }
 
@@ -102,6 +135,7 @@ form input:focus {
 .login-link {
   font-family: "Cuprum", "Arial", sans-serif;
   color: #000000;
+  background-color: #ffffff;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
@@ -118,6 +152,7 @@ form input:focus {
 .personal-link {
   font-family: "Cuprum", "Arial", sans-serif;
   color: #000000;
+  background-color: #ffffff;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
@@ -141,21 +176,58 @@ form input:focus {
   color: #c5c5c5;
 }
 
-.breadcrumps {
+.navigation {
+  font-size: 17px;
+  line-height: 17px;
   color: #ffffff;
-  background-color: #293449;
+  background-color: #32425c;
   list-style: none;
   text-decoration: none;
 }
 
-.items {
+.list-items li a:hover:not(:last-child) {
+  background-color: #293449;
+}
+
+.list-items li a:active {
+  opacity: 0.5;
+  background-color: #1d2739;
+}
+
+.list-navigation a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.list-navigation li {
+  list-style: none;
+}
+
+.list-navigation li a:hover {
+  background-color: #293449;
+}
+
+.list-navigation li a:active {
+  opacity: 0.5;
+  background-color: #1d2739;
+}
+
+.items a {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.items li {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
   list-style: none;
-  text-decoration: none;
 }
 
 .title {
@@ -182,6 +254,8 @@ form input:focus {
 .btn {
   font-size: 13px;
   line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ffffff;
 }
 
 .list-items a {
@@ -191,34 +265,24 @@ form input:focus {
 
 .list-items li {
   list-style: none;
+}
+
+.list-items-footer a {
+  color: #f1f5f7;
   text-decoration: none;
 }
 
-.list-items:hover {
-  background-color: #212a3a;
-}
-
-.list-items:active {
-  color: #8b8e94;
-  background-color: #161d29;
-}
-
-.list-items-2 a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.list-items-2 li {
+.list-items-footer li {
   list-style: none;
-  text-decoration: none;
 }
 
-.list-items-2:hover {
+.list-items-footer li a:hover {
   text-decoration: underline;
 }
 
-.list-items-2:active {
-  color: #f1f5f7;
+.list-items-footer li a:active {
+  opacity: 0.5;
+  color: #f1f5f7
 }
 
 .social-items a {
@@ -228,10 +292,9 @@ form input:focus {
 
 .social-items li {
   list-style: none;
-  text-decoration: none;
 }
 
-.social-items:hover {
+.social-items li a:hover {
   background-color: #ee3643;
 }
 
@@ -242,7 +305,6 @@ form input:focus {
 
 .perforator-items li {
   list-style: none;
-  text-decoration: none;
 }
 
 .heading {
@@ -311,13 +373,17 @@ form input:focus {
   background-color: #ee3643;
 }
 
-.footer1 {
+.first-footer {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
   background-color: #32425c;
   text-decoration: none;
+}
+
+.address-footer {
+  color: #f3f7f9;
 }
 
 .special a {
@@ -327,36 +393,35 @@ form input:focus {
 
 .special li {
   list-style: none;
-  text-decoration: none;
 }
 
-.special:hover a {
+.special li a:hover {
   text-decoration: underline;
 }
 
-.special:active a {
+.special li a:active {
+  opacity: 0.5;
   color: #ffd180;
 }
 
-.special-2 a {
+.special-address a {
   color: #ffd180;
   text-decoration: none;
 }
 
-.special-2 li {
+.special-address li {
   list-style: none;
-  text-decoration: none;
 }
 
-.special-2:hover a {
+.special-address:hover a {
   text-decoration: underline;
 }
 
-.special-2:active a {
+.special-address:active a {
   color: #ee3643;
 }
 
-.footer2 {
+.second-footer {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -366,7 +431,7 @@ form input:focus {
 }
 
 .visually-hidden {
-  position:absolute;
+  position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
