@@ -9,7 +9,7 @@ body {
   background-color: #ffffff;
 }
 
-.site-navigation {
+.list-items {
   color: #ffffff;
   background-color: #293449;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -62,15 +62,15 @@ form input:focus {
   background-color: #161d29;
 }
 
-.site-navigation .button {
+.button {
   background-color: #63a63e;
 }
 
-.site-navigation .button:hover {
+.button:hover {
   background-color: #5fbb2d;
 }
 
-.site-navigation .button:active {
+.button:active {
   background-color: #518534;
 }
 
@@ -299,7 +299,6 @@ form input:focus {
 }
 
 .perforator-items a {
-  color: #ffffff;
   text-decoration: none;
 }
 
@@ -342,11 +341,11 @@ form input:focus {
   background-color: #63a63e;
 }
 
-.buy:hover {
+.buy a:hover {
   background-color: #5fbb2d;
 }
 
-.buy:active {
+.buy a:active {
   background-color: #518534;
 }
 
@@ -354,12 +353,12 @@ form input:focus {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
   color: #32425c;
+  text-transform: uppercase;
 }
 
-.marker:active {
-  color:#32425c;
+.marker a:active {
+  opacity: 0,5;
 }
 
 .list li {
@@ -369,7 +368,7 @@ form input:focus {
   list-style: none;
 }
 
-.list:active {
+.list li a:active {
   background-color: #ee3643;
 }
 
@@ -413,11 +412,11 @@ form input:focus {
   list-style: none;
 }
 
-.special-address:hover a {
+.special-address a:hover {
   text-decoration: underline;
 }
 
-.special-address:active a {
+.special-address a:active {
   color: #ee3643;
 }
 
@@ -427,7 +426,6 @@ form input:focus {
   line-height: 18px;
   color: #ffffff;
   background-color: #293449;
-  text-decoration: none;
 }
 
 .visually-hidden {
