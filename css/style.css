@@ -44,33 +44,24 @@ form input:focus {
   background-color: #ffffff;
 }
 
-.marker-navigation:hover {
+.list-item-add:hover {
   background-color: #212a3a;
 }
 
-.marker-navigation:active {
+.list-item-add:active {
   color: #8b8e94;
   background-color: #161d29;
 }
 
-.cart-navigation:hover {
-  background-color: #212a3a;
-}
-
-.cart-navigation:active {
-  color: #8b8e94;
-  background-color: #161d29;
-}
-
-.button {
+.list-item-button {
   background-color: #63a63e;
 }
 
-.button:hover {
+.list-item-button:hover {
   background-color: #5fbb2d;
 }
 
-.button:active {
+.list-item-button:active {
   background-color: #518534;
 }
 
@@ -358,7 +349,7 @@ form input:focus {
 }
 
 .marker a:active {
-  opacity: 0,5;
+  opacity: 0.5;
 }
 
 .list li {
