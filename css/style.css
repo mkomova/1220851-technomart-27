@@ -9,7 +9,7 @@ body {
   background-color: #ffffff;
 }
 
-.list-items {
+.list-items-wrapper  {
   color: #ffffff;
   background-color: #293449;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -17,6 +17,9 @@ body {
 
 .logo {
   background-color: #ee3643;
+  width: 109px;
+  height: 19px;
+  padding: 13px 56px 15px 55px;
 }
 
 .logo:hover {
@@ -44,6 +47,14 @@ form input:focus {
   background-color: #ffffff;
 }
 
+.list-item-add {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+}
+
 .list-item-add:hover {
   background-color: #212a3a;
 }
@@ -54,7 +65,11 @@ form input:focus {
 }
 
 .list-item-button {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   background-color: #63a63e;
+  padding: 14px 22px 13px 20px;
 }
 
 .list-item-button:hover {
@@ -65,7 +80,7 @@ form input:focus {
   background-color: #518534;
 }
 
-.text {
+.text-wrapper {
   background-color: #f3f7f8;
 }
 
@@ -77,6 +92,11 @@ form input:focus {
 }
 
 .about {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.about-business {
   font-size: 13px;
   line-height: 24px;
 }
@@ -115,6 +135,7 @@ form input:focus {
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
+  border: 3px solid #ffffff;
 }
 
 .address {
@@ -167,7 +188,7 @@ form input:focus {
   color: #c5c5c5;
 }
 
-.navigation {
+.list-navigation {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -234,6 +255,7 @@ form input:focus {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .filter-option li {
@@ -321,6 +343,10 @@ form input:focus {
   font-weight: bold;
   color: #ffffff;
   background-color: #ee3643;
+}
+
+.sale a {
+  color: #ffffff;
 }
 
 .buy {
@@ -411,6 +437,23 @@ form input:focus {
   color: #ee3643;
 }
 
+.special-mail a {
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.special-mail li {
+  list-style: none;
+}
+
+.special-mail a:hover {
+  text-decoration: underline;
+}
+
+.special-mail a:active {
+  color: #ee3643;
+}
+
 .second-footer {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
@@ -433,4 +476,307 @@ form input:focus {
 
 .add-to-cart {
   display: none;
+}
+
+/* Сеточные стили */
+
+body {
+  width: 100%;
+}
+
+.main-header {
+  margin-bottom: 59px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+  padding: 0 10px;
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+.middle-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.caption {
+display: flex;
+flex-direction: column;
+margin-top: 46px;
+}
+
+.phone {
+  padding: 13px 52px 11px 54px;
+  margin-top: 46px;
+  margin-bottom: 10px
+}
+
+.address {
+  display: flex;
+}
+
+.login-link {
+display: flex;
+align-items: center;
+padding: 14px 25px 11px 25px;
+}
+
+.personal-link {
+  display: flex;
+  align-items: center;
+  padding: 14px 69px 11px 47px;
+  margin-bottom: 10px;
+  margin-top: 46px;
+  }
+
+.information-link {
+  padding-right: 32px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.list-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 23px;
+}
+
+.index-about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 82px;
+  padding-bottom: 86px;
+  align-items: baseline;
+}
+
+.about-business {
+padding-right: 120px;
+}
+
+.about-us {
+display: flex;
+flex-direction: column;
+}
+
+.about {
+display: flex;
+flex-direction: column;
+}
+
+.lines {
+margin-bottom: 23px;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  margin-top: 37px;
+}
+
+.list-about {
+  margin-bottom: 37px;
+}
+
+.button-index {
+  padding: 14px 40px 12px 41px;
+}
+
+.map {
+  margin-top: 36px;
+  margin-bottom: 40px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.title {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 34px;
+}
+
+.catalog-section {
+  display: flex;
+}
+
+.filter-section {
+  display: flex;
+}
+
+.shopping-section {
+  display: flex;
+}
+
+.filter-option {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.filter-name {
+  padding-bottom: 17px;
+}
+
+.btn {
+  display: flex;
+  margin-top: 83px;
+  border: 1px solid #e5e5e5;
+  padding: 15px 39px 14px 39px;
+}
+
+.perforator-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.perforator-item {
+  border: 1px solid #e5e5e5;
+  margin-right: 20px;
+  margin-bottom: 21px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-sale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price {
+  margin-bottom: 13px;
+}
+
+.sale {
+  padding: 13px 40px 13px 36px;
+  margin-bottom: 21px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 240px;
+  margin-bottom: 60px;
+  margin-top: 52px;
+}
+
+.list-group a {
+  color: #000000;
+}
+
+.list-group {
+  border: 1px solid #e5e5e5;
+  padding: 14px 15px 15px 16px;
+}
+
+.list-group:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.list-group:active {
+  border: 1px solid #ee3643;
+}
+
+/*
+.buy {
+  padding: 14px 45px 14px 49px;
+}
+
+.marker {
+  padding: 11px 29px 9px 33px;
+  border: 3px solid #63a63e;
+}
+*/
+.first-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.first-footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-items-footer {
+  display: flex;
+  margin-top: 42px;
+  justify-content: space-between;
+}
+
+.special {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: flex;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-items {
+  display: flex;
+}
+
+.special-mail {
+  display: flex;
+  flex-direction: column;
+}
+
+.special-address {
+  display: flex;
+  flex-direction: column;
 }
