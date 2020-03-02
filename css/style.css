@@ -578,6 +578,34 @@ form input:focus {
   width: 100%;
 }
 
+.navigation-cards {
+  display: flex;
+}
+
+.background-orange {
+  background-image: url("img/background-orange.png");
+  width: 300px;
+  height: 123px;
+}
+
+.background-blue {
+  background-image: url("img/background-blue.png");
+  width: 300px;
+  height: 123px;
+}
+
+.background-purple {
+  background-image: url("img/background-purple.png");
+  width: 300px;
+  height: 123px;
+}
+
+.background-green {
+  background-image: url("img/background-green.png");
+  width: 300px;
+  height: 123px;
+}
+
 .index-about {
   display: flex;
   justify-content: space-between;
