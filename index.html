@@ -14,8 +14,8 @@
         <a class="header-logo" href="index.html">
           <img class="logo" src="img/icons-svg/logo-technomart.svg" width="240" height="23" alt="Логотип магазина Техномарт">
         </a>
-        <form class="search" action="https://echo.htmlacademy.ru/courses" method="get">
-          <input type="search" placeholder="Поиск">
+        <form action="https://echo.htmlacademy.ru/courses" method="get">
+          <input class="search" type="search" placeholder="Поиск:">
         </form>
         <a class="list-item-add" href="">Закладки: <span>0</span></a>
         <a class="list-item-add" href="">Корзина: <span>0</span></a>
@@ -26,9 +26,9 @@
       <div class="text-wrapper container">
         <div class="middle-header">
           <p class="caption">
-            <span>Интернет-магазин</span> <span>строительных материалов</span> <span>и инструментов для ремонта</span>
+            Интернет-магазин строительных материалов и инструментов для ремонта
           </p>
-          <div>
+          <div class="phone-address">
             <p class="phone">
               +7 (812) 555-05-55
             </p>
@@ -36,8 +36,10 @@
               г. Санкт-Петербург, Б. Конюшенная, д. 19/8
             </p>
           </div>
-          <a class="login-link" href="">Войти</a>
-          <a class="login-link" href="">Регистрация</a>
+          <div class="user-navigation-index">
+            <a class="login-link" href="">Войти</a>
+            <a class="login-link" href="">Регистрация</a>
+          </div>
         </div>
         <ul class="list-navigation">
           <li><a href="index.html">Главная</a></li>
@@ -54,45 +56,43 @@
   <main class="container">
     <h1 class="visually-hidden">Магазин Техномарт</h1>
     <section class="navigation-cards">
-      <div class="background-orange-material">
-        <div>
+      <div class="block background-orange-material">
+        <div class="title-button">
           <h3 class="navigation-cards-title">Материалы</h3>
           <a class="navigation-cards-button" href="">На любой вкус</a>
         </div>
         <img class="navigation-cards-image" src="img/icon-1-material.png" width="44" height="65" alt="Картинка с банкой краски">
         <span class="new-flag">new</span>
       </div>
-      <div class="background-blue">
-        <div>
+      <div class="block background-blue">
+        <div class="title-button">
           <h3 class="navigation-cards-title">Инструмент</h3>
           <a class="navigation-cards-button" href="">На все случаи</a>
         </div>
         <img class="navigation-cards-image" src="img/icon-2-instrument.png" width="75" height="61" alt="Картинка с дрелью">
       </div>
-      <div class="background-purple">
-        <div>
+      <div class="block background-purple">
+        <div class="title-button">
           <h3 class="navigation-cards-title">Техника</h3>
           <a class="navigation-cards-button" href="">Для стройки</a>
         </div>
         <img class="navigation-cards-image" src="img/icon-3-tehnika.png" width="78" height="62" alt="Картинка с трактором">
       </div>
       <div class="main-image">
-        <div>
-          <h3 class="navigation-card-title">Дрели</h3>
-          <p class="navigation-card-lead">Соседям на радость!</p>
-          <a class="navigation-card-button" href="">Открыть каталог</a>
-        </div>
+        <h3 class="navigation-card-title">Дрели</h3>
+        <p class="navigation-card-lead">Соседям на радость!</p>
+        <a class="navigation-card-button" href="">Открыть каталог</a>
       </div>
       <div>
-        <div class="background-green">
-          <div>
+        <div class="block background-green">
+          <div class="title-button">
             <h3 class="navigation-cards-title">Скидки 50%</h3>
             <a class="navigation-cards-button" href="">На 350 товаров</a>
           </div>
           <img class="navigation-cards-image" src="img/icon-4-sale.png" width="59" height="72" alt="Картинка с тележкой">
         </div>
-        <div class="background-orange-delivery">
-          <div>
+        <div class="block background-orange-delivery">
+          <div class="title-button">
             <h3 class="navigation-cards-title">Доставка</h3>
             <a class="navigation-cards-button" href="">Бесплатно</a>
           </div>
@@ -101,22 +101,22 @@
       </div>
     </section>
     <section class="title-wrapper">
-      <h1 class="title">Популярные товары:</h1>
-      <a class="title-button" href="">Все популярные товары</a>
+      <h3 class="title">Популярные товары:</h3>
+      <a class="button-index" href="">Все популярные товары</a>
     </section>
     <section class="catalog-section">
-      <h2 class="visually-hidden">Список перфораторов</h2>
+      <h3 class="visually-hidden">Список перфораторов</h3>
       <ul class="perforator-items-index">
         <li class="perforator-item-index">
           <a href="">
             <img src="img/Perforator_9000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
           </a>
-          <h3>
+          <h4>
             <a class="heading" href="">
               <span>Перфоратор Bosch</span>
               <span>BFG 9000</span>
             </a>
-          </h3>
+          </h4>
           <!--
           <div>
           <a class="buy" href="">Купить</a>
@@ -125,23 +125,21 @@
       -->
       <div class="price-sale">
         <span class="price">
-          32 500 ₽.
+          32 500 Р.
         </span>
-        <span class="sale">
-          <a href="add.html">25 500 Р.</a>
-        </span>
+        <a class="sale" href="add.html">25 500 Р.</a>
       </div>
     </li>
     <li class="perforator-item-index">
       <a href="">
         <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
       </a>
-      <h3>
+      <h4>
         <a class="heading" href="">
           <span>Перфоратор Bosch</span>
           <span>BFG 3000</span>
         </a>
-      </h3>
+      </h4>
       <!--
       <div>
       <a class="buy" href="">Купить</a>
@@ -150,23 +148,21 @@
   -->
   <div class="price-sale">
     <span class="price">
-      22 500 ₽.
+      22 500 Р.
     </span>
-    <span class="sale">
-      <a href="add.html">15 500 Р.</a>
-    </span>
+    <a class="sale" href="add.html">15 500 Р.</a>
   </div>
 </li>
 <li class="perforator-item-index">
   <a href="">
     <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
   </a>
-  <h3>
+  <h4>
     <a class="heading" href="">
       <span>Перфоратор Bosch</span>
       <span>BFG 6000</span>
     </a>
-  </h3>
+  </h4>
   <!--
   <div>
   <a class="buy" href="">Купить</a>
@@ -175,23 +171,21 @@
 -->
 <div class="price-sale">
   <span class="price">
-    30 500 ₽.
+    30 500 Р.
   </span>
-  <span class="sale">
-    <a href="add.html">25 500 Р.</a>
-  </span>
+  <a class="sale" href="add.html">25 500 Р.</a>
 </div>
 </li>
 <li class="perforator-item-index">
   <a href="">
     <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
   </a>
-  <h3>
+  <h4>
     <a class="heading" href="">
       <span>Перфоратор Bosch</span>
       <span>BFG 2000</span>
     </a>
-  </h3>
+  </h4>
   <!--
   <div>
   <a class="buy" href="">Купить</a>
@@ -199,20 +193,18 @@
 </div>
 -->
 <div class="price-sale">
-  <span class="sale">
-    <a href="add.html">12 500 Р.</a>
-  </span>
+  <a class="sale" href="add.html">12 500 Р.</a>
 </div>
 </li>
 </ul>
 </section>
 <section class="title-wrapper">
-  <h1 class="title">Популярные производители:</h1>
-  <a class="title-button" href="">Все производители</a>
+  <h3 class="title">Популярные производители:</h3>
+  <a class="button-index" href="">Все производители</a>
 </section>
 <section class="popular-brands">
-  <h2 class="visually-hidden">Список производителей</h2>
-  <ul class="container brands-items">
+  <h3 class="visually-hidden">Список производителей</h3>
+  <ul class="brands-items">
     <li class="brand-item">
       <a href="">
         <img src="img/company-logo/bosch.png" width="126" height="37" alt="Логотип Bosch">
@@ -256,53 +248,46 @@
   </ul>
 </section>
 <section class="services-about">
-  <h2 class="heading-index">Сервисы</h2>
+  <h3 class="heading-index">Сервисы</h3>
   <p class="slide-paragraph">
     <span>Хороший интернет-магазин отличается от плохого не только ценами!</span>
     <span>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</span>
   </p>
-  <form>
-    <div class="services-card">
-      <button class="services-button">Доставка</button>
-      <div class="title-paragraph">
-        <h1 class="slide-title">Доставка</h1>
-        <p class="slide-paragraph">
-          <span>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!</span>
-          <span>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</span>
-        </p>
-      </div>
-      <img class="services-img" src="img/truck.png" width="468" height="261" alt="Картинка с грузовиком">
+  <div class="services-cards">
+    <ul class="services-buttons">
+      <li class="services-button">Доставка</li>
+      <li class="services-button">Гарантия</li>
+      <li class="services-button">Кредит</li>
+    </ul>
+    <div class="delivery-paragraph">
+      <h2 class="slide-title">Доставка</h2>
+      <p class="slide-paragraph">
+        <span>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!</span>
+        <span>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</span>
+      </p>
     </div>
-    <div class="services-card">
-      <button class="services-button">Гарантия</button>
-      <div class="title-paragraph">
-        <h1 class="slide-title">Гарантия</h1>
-        <p class="slide-paragraph">
-          Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием,
-          вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
-          Дом уж восстановите как-нибудь сами.
-        </p>
-      </div>
-      <img class="services-img" src="img/guarantee.png" width="389" height="283" alt="Картинка с гарантией 100%">
+    <div class="visually-hidden guarantee-paragraph">
+      <h4 class="slide-title">Гарантия</h4>
+      <p class="slide-paragraph">
+        Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием,
+        вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+        Дом уж восстановите как-нибудь сами.
+      </p>
     </div>
-    <div class="services-card">
-      <button class="services-button">Кредит</button>
-      <div class="title-paragraph">
-        <h1 class="slide-title">Кредит</h1>
-        <p class="slide-paragraph">
-          Залезть в долговую яму стало проще!<br>
-          Кредитные консультанты придут вам на помощь.
-        </p>
-        <a class="button-index" href="">Отправить заявку</a>
-      </div>
-      <img class="services-img" src="img/credit.png" width="465" height="285" alt="Картинка с деньгами">
+    <div class="visually-hidden credit-paragraph">
+      <h4 class="slide-title">Кредит</h4>
+      <p class="slide-paragraph">
+        Залезть в долговую яму стало проще!<br>
+        Кредитные консультанты придут вам на помощь.
+      </p>
+      <a class="button-index" href="">Отправить заявку</a>
     </div>
-  </form>
+  </div>
 </section>
 <section class="index-about">
   <div class="container index-about">
     <div class="company-business">
-      <h2 class="heading-index">Компания «Техномарт»</h2>
+      <h3 class="heading-index">Компания «Техномарт»</h3>
       <p class="about-business">
         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гасторбайтерах.
       </p>
@@ -318,7 +303,7 @@
       <a class="button-index" href="">Подробнее о компании</a>
     </div>
     <div class="company-contacts">
-      <h2 class="heading-index">Контакты</h2>
+      <h3 class="heading-index">Контакты</h3>
       <h3 class="visually-hidden">Как до нас добраться</h3>
       <p class="about">
         <span>Вы можете забрать товар сами,</span> <span>заехав в наш офис.</span>
