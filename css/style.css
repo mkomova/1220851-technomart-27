@@ -22,7 +22,6 @@ body {
 }
 
 .main-header {
-  margin-bottom: 59px;
 }
 
 .middle-header {
@@ -47,6 +46,22 @@ body {
 }
 
 .logo:active {
+  background-color: #ba2732;
+}
+
+.logo-footer {
+  background-color: #ee3643;
+  width: 109px;
+  height: 19px;
+  padding: 13px 56px 15px 55px;
+  margin-bottom: 20px;
+}
+
+.logo-footer:hover {
+  background-color: #ca2c37;
+}
+
+.logo-footer:active {
   background-color: #ba2732;
 }
 
@@ -83,7 +98,7 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
-  padding: 14px 28px 13px 44px;
+  padding: 19px 53px 18px 20px;
 }
 
 .list-item-add:hover {
@@ -104,7 +119,7 @@ body {
   font-size: 17px;
   line-height: 18px;
   background-color: #63a63e;
-  padding: 14px 22px 13px 20px;
+  padding: 19px 22px 18px 20px;
 }
 
 .list-item-button:hover {
@@ -120,6 +135,14 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
+}
+
+.text-wrapper-perforator {
+  background-color: #f3f7f8;
+  display: flex;
+  flex-direction: column;
+  padding-top: 67px;
+  padding-bottom: 60px;
 }
 
 .title-wrapper-catalog {
@@ -138,6 +161,7 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -176,6 +200,27 @@ body {
 
 .button-index:active {
   background-color: #ba2732;
+}
+
+.button-index-popular {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 40px 12px 41px;
+  text-align: center;
+  margin-right: 24px;
+}
+
+.button-index-popular:active {
+  background-color: #ba2732;
+}
+
+.button-index-popular:hover {
+  background-color: #ca2c37;
 }
 
 .caption {
@@ -286,7 +331,9 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 0;
-  padding: 22px 31px 26px 31px;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  padding-right: 40px;
 }
 
 .list-items li a:hover:not(:last-child) {
@@ -301,7 +348,7 @@ body {
 .list-navigation a {
   color: #ffffff;
   text-decoration: none;
-  padding: 20px 31px 23px 31px;
+  padding: 20px 31px 22px 31px;
 }
 
 .list-navigation li {
@@ -354,7 +401,11 @@ body {
   display: flex;
 }
 
-.main-image {
+.slider-main {
+  display: flex;
+}
+
+.main-image-first {
   background-image: url("../img/main-image.jpg");
   background-color: #000000;
   width: 595px;
@@ -362,7 +413,17 @@ body {
   margin-right: 20px;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 27px;
+  padding-left: 24px;
+}
+
+.main-image-second {
+  background-image: url("../img/slide-image.png");
+  background-color: #000000;
+  width: 595px;
+  display: flex;
+  margin-right: 20px;
+  flex-direction: column;
+  align-items: flex-start;
   padding-left: 24px;
 }
 
@@ -387,8 +448,19 @@ body {
   line-height: 18px;
   text-decoration: none;
   background-color: rgba(0,0,0,.1);
-  padding: 12px 24px 14px 24px;
+  padding: 12px 0 14px;
   margin-left: 25px;
+  width: 135px;
+  display: inline-block;
+  text-align: center;
+}
+
+.navigation-cards-button:hover {
+  background-color: rgba(0,0,0,.2);
+}
+
+.navigation-cards-button:focus {
+  background-color: rgba(0,0,0,.3);
 }
 
 .title-button {
@@ -396,8 +468,9 @@ body {
 }
 
 .navigation-cards-image {
-  margin-top: 31px;
-  margin-right: 43px;
+  display: flex;
+  align-self: center;
+  margin: auto;
 }
 
 .navigation-card-title {
@@ -405,6 +478,9 @@ body {
   color: #ffffff;
   font-size: 36px;
   line-height: 36px;
+  margin-top: 27px;
+  margin-bottom: 0;
+
 }
 
 .navigation-card-button {
@@ -416,12 +492,22 @@ body {
   padding: 14px 45px 14px 49px;
   text-decoration: none;
   text-transform: uppercase;
+  margin-top: 90px;
+}
+
+.navigation-card-button:hover {
+  background-color: #ca2c37;
+}
+
+.navigation-card-button:focus {
+  background-color: #ba2732;
 }
 
 .navigation-card-lead {
   font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   font-size: 18px;
+  margin-top: 8px;
 }
 
 .new-flag {
@@ -433,13 +519,10 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f4f7f9;
-  padding-top: 38px;
-  padding-bottom: 82px;
 }
 
 .services-cards {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .services-buttons {
@@ -448,6 +531,7 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: 30px;
+  font-weight: 400;
   color: #ffffff;
   background-color: #32425c;
   padding: 0;
@@ -471,6 +555,7 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: #32425c;
 }
 
@@ -488,7 +573,8 @@ body {
   margin-left: 80px;
   background-image: url("../img/truck.png");
   background-repeat: no-repeat;
-  width: 468px;
+  background-position: bottom right;
+  width: 100%;
 }
 
 .guarantee-paragraph {
@@ -529,11 +615,12 @@ body {
 .about {
   display: flex;
   flex-direction: column;
+  margin: auto 0;
 }
 
 .map {
   margin-top: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .lines {
@@ -553,9 +640,7 @@ body {
 
 .items {
   display: flex;
-  justify-content: space-between;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-left: 0;
 }
 
 .items a {
@@ -574,12 +659,14 @@ body {
   color: #000000;
   background-color: #ffffff;
   list-style: none;
+  padding-right: 18px;
 }
 
 .title {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
   display: flex;
@@ -630,13 +717,18 @@ body {
 }
 
 .list-items-footer {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 .list-items-footer a {
   color: #f1f5f7;
   text-decoration: none;
+  padding-left: 60px;
 }
 
 .list-items-footer li {
@@ -669,12 +761,20 @@ body {
   background-color: #ee3643;
 }
 
+.price-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
 .filter-title {
   display: flex;
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
   background-color: #f7f3ec;
-  padding: 14px 149px 15px 18px;
+  padding: 14px 95px 15px 18px;
   text-transform: uppercase;
 }
 
@@ -687,11 +787,30 @@ body {
   padding-top: 14px;
   padding-bottom: 15px;
   justify-content: space-around;
+  margin: 0;
 }
 
 .filter-price-option a {
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.18);
+  border-bottom: 1px solid #ee3643;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.filter-price-option li {
+  list-style: none;
+  margin-left: 5px;
+}
+
+.filter-price-option a:hover {
   color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.filter-price-option a:focus {
+  color: #ee3643;
+  border-bottom: none;
 }
 
 .price-title {
@@ -700,10 +819,99 @@ body {
   text-transform: uppercase;
 }
 
+.up-down {
+  display: flex;
+  margin-left: 46px;
+}
+
+.range {
+  width: 220px;
+}
+
+.range-controls {
+  position: relative;
+  background-color: #f7f3ec;
+  height: 80px;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  box-sizing: border-box;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.range-controls .scale {
+  width: 177px;
+  height: 2px;
+  background-color: lightgrey;
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background-color: #50a07e;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 30px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left:20px;
+}
+
+.range-controls .toggle-max {
+  left:160px;
+}
+
+.price-controls {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  width: 220px;
+  margin-bottom:24px;
+}
+
+.price-controls input {
+  position: relative;
+  width: 95px;
+  height: 38px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  background-color: #f7f3ec;
+  border: none;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.price-controls .max-price {
+  position: relative;
+  margin-left: 30px;
+}
+
+.price-controls .max-price::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color:#444444;
+  top: 50%;
+  left: 0%;
+  margin-left: -20px;
+  margin-top: -1px;
+}
+
 .sorting {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
 }
 
 .catalog-section {
@@ -716,27 +924,36 @@ body {
 
 .shopping-section {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-option {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .filter-name {
   padding-bottom: 17px;
 }
 
+.checkbox {
+  margin-right: 12px;
+}
+
+.radio {
+  margin-right: 10px;
+}
+
 /*
 .buy {
-  padding: 14px 45px 14px 49px;
+padding: 14px 45px 14px 49px;
 }
 
 .marker {
-  padding: 11px 29px 9px 33px;
-  border: 3px solid #63a63e;
+padding: 11px 29px 9px 33px;
+border: 3px solid #63a63e;
 }
 */
 
@@ -745,6 +962,8 @@ body {
 }
 
 .perforator-items li {
+  display: flex;
+  flex-direction: column;
   list-style: none;
 }
 
@@ -771,7 +990,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  padding: 0
+  padding: 0;
 }
 
 .perforator-item-index {
@@ -779,10 +998,31 @@ body {
   flex-direction: column;
   border: 1px solid #e5e5e5;
   margin-right: 20px;
+  position: relative;
+  min-width: 218px;
+}
+
+.perforator-item-index:hover .perforator-item-img {
+  opacity: 0;
+}
+
+.perforator-item-index:hover .buy-marker {
+  display: flex;
 }
 
 .perforator-item-index:last-child {
   margin-right: 0;
+}
+
+.perforator-rollover {
+  display: block;
+  background-image: url("../img/Perforator_9000.jpg");
+  width: 218px;
+  height: 170px;
+}
+
+.perforator-rollover:hover {
+
 }
 
 .heading {
@@ -828,6 +1068,16 @@ body {
   color: #ffffff;
 }
 
+.buy-marker {
+  position: absolute;
+  display: none;
+  background: #ffffff;
+  flex-direction: column;
+  width: 135px;
+  top: 44px;
+  left: 42px;
+}
+
 .buy {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
@@ -835,6 +1085,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #63a63e;
+  padding: 14px 45px 14px 49px;
+  margin-bottom: 7px;
 }
 
 .buy a:hover {
@@ -851,6 +1103,8 @@ body {
   line-height: 18px;
   color: #32425c;
   text-transform: uppercase;
+  border: 3px solid #63a63e;
+  padding: 11px 29px 9px 30px;
 }
 
 .marker a:active {
@@ -880,12 +1134,16 @@ body {
   margin-bottom: 20px;
 }
 
+.page {
+  display: flex;
+}
+
 .list {
   display: flex;
-  justify-content: space-between;
-  margin-left: 240px;
+  padding: 0;
+  margin-right: auto;
   margin-bottom: 60px;
-  margin-top: 52px;
+  margin-left: 260px;
 }
 
 .list li {
@@ -893,17 +1151,12 @@ body {
   line-height: 18px;
   text-transform: uppercase;
   list-style: none;
-}
-
-.list li a:active {
-  background-color: #ee3643;
+  margin-right: 10px;
 }
 
 .list-group a {
   color: #000000;
-}
-
-.list-group a {
+  text-decoration: none;
   border: 1px solid #e5e5e5;
   padding: 14px 15px 15px 16px;
 }
@@ -916,7 +1169,7 @@ body {
   border: 1px solid #ee3643;
 }
 
-.list-group.active {
+.list-group.active a {
   background-color: #ee3643;
 }
 
@@ -924,6 +1177,7 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -953,7 +1207,7 @@ body {
   background-color: #293449;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -963,6 +1217,19 @@ body {
 .footer-contacts {
   display: flex;
   flex-direction: column;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.footer-address {
+  margin-bottom: 0;
+}
+
+.footer-phone {
+  margin-top: 0;
+  margin-bottom: 53px;
 }
 
 .first-footer-container {
@@ -979,6 +1246,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .address-footer {
@@ -988,6 +1256,8 @@ body {
 .copyright {
   display: flex;
   flex-direction: column;
+  margin-top: 39px;
+  margin-bottom: 35px;
 }
 
 .special {
@@ -998,6 +1268,7 @@ body {
 .special a {
   color: #ffd180;
   text-decoration: none;
+  padding-left: 60px;
 }
 
 .special li {
