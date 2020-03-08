@@ -21,9 +21,6 @@ body {
   padding: 0 10px;
 }
 
-.main-header {
-}
-
 .middle-header {
   display: flex;
 }
@@ -425,6 +422,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding-left: 24px;
+  display: none;
 }
 
 .navigation-cards {
@@ -437,8 +435,9 @@ body {
   color: #ffffff;
   font-size: 24px;
   line-height: 30px;
-  margin-top: 26px;
+  margin-top: 14px;
   margin-left: 23px;
+  margin-bottom: 16px;
 }
 
 .navigation-cards-button {
@@ -584,6 +583,7 @@ body {
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
   width: 389px;
+  display: none;
 }
 
 .credit-paragraph {
@@ -593,6 +593,7 @@ body {
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   width: 465px;
+  display: none;
 }
 
 .index-about {
@@ -946,17 +947,6 @@ body {
   margin-right: 10px;
 }
 
-/*
-.buy {
-padding: 14px 45px 14px 49px;
-}
-
-.marker {
-padding: 11px 29px 9px 33px;
-border: 3px solid #63a63e;
-}
-*/
-
 .perforator-items a {
   text-decoration: none;
 }
@@ -984,6 +974,8 @@ border: 3px solid #63a63e;
 .perforator-item {
   border: 1px solid #e5e5e5;
   margin-bottom: 21px;
+  display: flex;
+  position: relative;
 }
 
 .perforator-items-index {
@@ -1014,15 +1006,12 @@ border: 3px solid #63a63e;
   margin-right: 0;
 }
 
-.perforator-rollover {
-  display: block;
-  background-image: url("../img/Perforator_9000.jpg");
-  width: 218px;
-  height: 170px;
+.perforator-item:hover .perforator-item-img {
+  opacity: 0;
 }
 
-.perforator-rollover:hover {
-
+.perforator-item:hover .buy-marker {
+  display: flex;
 }
 
 .heading {
@@ -1089,11 +1078,11 @@ border: 3px solid #63a63e;
   margin-bottom: 7px;
 }
 
-.buy a:hover {
+.buy:hover {
   background-color: #5fbb2d;
 }
 
-.buy a:active {
+.buy:focus {
   background-color: #518534;
 }
 
@@ -1107,8 +1096,13 @@ border: 3px solid #63a63e;
   padding: 11px 29px 9px 30px;
 }
 
-.marker a:active {
-  opacity: 0.5;
+.marker:hover {
+  border: 3px solid #32425c;
+}
+
+.marker:focus {
+  opacity: 0.3;
+  border: 3px solid #32425c;
 }
 
 .popular-brands {
