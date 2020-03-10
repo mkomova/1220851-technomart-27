@@ -23,6 +23,7 @@ body {
 
 .middle-header {
   display: flex;
+  align-items: center
 }
 
 .list-items-wrapper  {
@@ -256,8 +257,9 @@ body {
 }
 
 .user-navigation-index {
-  margin-top: 55px;
-  margin-left: 70px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .user-navigation-inner {
@@ -446,6 +448,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
+  text-transform: uppercase;
   background-color: rgba(0,0,0,.1);
   padding: 12px 0 14px;
   margin-left: 25px;
@@ -1165,6 +1168,7 @@ body {
 
 .list-group.active a {
   background-color: #ee3643;
+  color: #ffffff;
 }
 
 .about-perforator-title {
@@ -1223,12 +1227,12 @@ body {
 
 .footer-phone {
   margin-top: 0;
-  margin-bottom: 53px;
 }
 
 .first-footer-container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 53px;
 }
 
 .first-footer-info {
