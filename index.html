@@ -378,27 +378,39 @@
   </footer>
   <div>
     <form class="write-to-us" action="https://echo.htmlacademy.ru/courses" method="post">
-      <section>
-        <p>Ваше имя:</p>
-        <input type="text" name="username" placeholder="Имя Фамилия">
-        <p>Ваш email:</p>
-        <input type="text" name="email" placeholder="email@example.com">
-        <p>Текст письма:</p>
-        <textarea rows="6" cols="40" placeholder="В свободной форме"></textarea>
+      <section class="popup-titles-wrap">
+        <div class="popup-name-email">
+          <div class="popup-title-name">
+            <p>Ваше имя:</p>
+            <input class="popup-input" type="text" name="username" placeholder="Имя Фамилия">
+          </div>
+          <div class="popup-title-email">
+            <p>Ваш e-mail:</p>
+            <input class="popup-input" type="text" name="email" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="popup-text">
+          <p class="popup-title-text">Текст письма:</p>
+          <textarea class="popup-input" rows="6" cols="40" placeholder="В свободной форме"></textarea>
+        </div>
       </section>
-      <input type="submit" value="Отправить">
+      <section class="popup-button-background">
+        <input class="popup-button" type="submit" value="Отправить">
+      </section>
     </form>
   </div>
   <div>
     <form class="add-to-cart" action="https://echo.htmlacademy.ru/courses" method="post">
-      <section>
+      <section class="popup-header">
         <a href="">
-          <img src="#" width="250" height="250" alt="Здесь нарисована зеленая галочка">
+          <img src="img/icons-svg/icon-mark.svg" width="66" height="66" alt="Здесь нарисована зеленая галочка">
         </a>
-        <p>Товар добавлен в корзину!</p>
+        <p class="popup-add-title">Товар добавлен в корзину!</p>
       </section>
-      <a href="">Оформить заказ</a>
-      <a href="inner.html">Продолжить покупки</a>
+      <section class="popup-button-background">
+        <a class="popup-button-buy" href="">Оформить заказ</a>
+        <a class="popup-button-continue" href="inner.html">Продолжить покупки</a>
+      </section>
     </form>
   </div>
 </body>

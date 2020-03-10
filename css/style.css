@@ -1335,9 +1335,115 @@ body {
 }
 
 .write-to-us {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  height: 430px;
+  border-top: 7px solid #ee3643;
+}
+
+.popup-titles-wrap {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  margin-left: 81px;
+  margin-right: 80px;
+}
+
+.popup-name-email {
+  display: flex;
+}
+
+.popup-title-name {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  flex-grow: 1;
+}
+
+.popup-title-email {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.popup-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 37px;
+}
+
+.popup-input::placeholder {
+  font-size: 13px;
+  line-height: 18px;
+  padding: 14px 126px 12px 16px;
+  color: #a9a9a9;
+  margin-right: 20px;
+}
+
+.popup-input:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.popup-input:focus {
+  border: 2px solid #ee3643;
+}
+
+.popup-button {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+  color: #ffffff;
+  padding: 14px 199px;
+}
+
+.popup-button-background {
+  background-color: #f4f4f4;
+  padding: 37px 80px;
 }
 
 .add-to-cart {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  height: 282px;
+  border-top: 7px solid #ee3643;
+}
+
+.popup-header {
+  display: flex;
+  margin-left: 81px;
+  margin-top: 48px;
+  margin-bottom: 49px;
+}
+
+.popup-add-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 32px;
+}
+
+.popup-button-buy {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+  padding: 14px 62px 14px 29px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.popup-button-continue {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 14px 48px 12px 44px;
+  text-decoration: none;
 }
