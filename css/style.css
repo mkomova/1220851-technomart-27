@@ -1818,11 +1818,23 @@ body {
 }
 
 .popup-titles-wrap {
+  position: relative;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   margin-left: 81px;
   margin-right: 80px;
+}
+
+.close-button {
+  background-image: url("../img/icons-svg/icon-close.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 16px;
+  right: -71px;
+  width: 21px;
+  height: 21px;
+  border: none;
 }
 
 .popup-name-email {
@@ -1890,16 +1902,40 @@ body {
 
 .popup-header {
   display: flex;
+  position: relative;
   margin-left: 81px;
   margin-top: 48px;
   margin-bottom: 49px;
 }
 
+.close-button-add {
+  background-image: url("../img/icons-svg/icon-close.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -34px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  border: none;
+}
+
 .popup-add-title {
+  position: relative;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
-  margin-left: 32px;
+  margin-left: 85px;
+}
+
+.popup-add-title::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -85px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icons-svg/icon-mark.svg");
+  background-repeat: no-repeat;
 }
 
 .popup-button-buy {
