@@ -1960,3 +1960,19 @@ body {
   padding: 14px 48px 12px 44px;
   text-decoration: none;
 }
+
+.map-popup {
+  position: relative;
+}
+
+.close-map-button {
+  background-image: url("../img/icons-svg/icon-close.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 8px;
+  right: 510px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+}
