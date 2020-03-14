@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <div>
-    <section>
-      <a href="">
-        <img src="#" width="250" height="250" alt="Здесь нарисована зеленая галочка">
-      </a>
-      <p>Товар добавлен в корзину!</p>
-    </section>
-    <a href="">Оформить заказ</a>
-    <a href="inner.html">Продолжить покупки</a>
+    <form class="add-to-cart" action="https://echo.htmlacademy.ru/courses" method="post">
+      <section class="popup-header">
+        <a href="">
+          <img src="img/icons-svg/icon-mark.svg" width="66" height="66" alt="Здесь нарисована зеленая галочка">
+        </a>
+        <p class="popup-add-title">Товар добавлен в корзину!</p>
+      </section>
+      <section class="popup-button-background">
+        <a class="popup-button-buy" href="">Оформить заказ</a>
+        <a class="popup-button-continue" href="inner.html">Продолжить покупки</a>
+      </section>
+    </form>
   </div>
 </body>
 </html>
