@@ -61,7 +61,7 @@ body {
 
 .header-logo {
   position: absolute;
-  top: 0px;
+  top: -4px;
   left: 0px;
   z-index: 1;
   display: flex;
@@ -96,7 +96,7 @@ body {
   font-size: 17px;
   line-height: 18px;
   background-color: #293449;
-  padding: 14px 10px 16px 49px;
+  padding: 14px 10px 10px 49px;
   border: none;
   outline: none;
   width: 270px;
@@ -246,28 +246,27 @@ body {
 
 .middle-header {
   display: flex;
-  align-items: center;
-  margin-top: 46px;
-  margin-bottom: 44px;
+  margin-top: 45px;
+  margin-bottom: 24px;
 }
 
 .caption {
   color: #ee3643;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
-  max-width: 210px;
   display: flex;
   flex-direction: column;
-  margin-top: 0;
+  margin-top: 3px;
   margin-bottom: 0;
-  margin-left: 30px;
+  margin-left: 52px;
 }
 
 .phone-address {
   display: flex;
   flex-direction: column;
-  margin-left: 71px;
+  margin-left: 85px;
 }
 
 .phone {
@@ -275,11 +274,11 @@ body {
   display: flex;
   text-decoration: none;
   color: #ee3643;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
   border: 3px solid #ffffff;
-  padding: 13px 52px 11px 54px;
-  margin-bottom: 10px
+  padding: 13px 52px 11px 74px;
 }
 
 .phone::before {
@@ -294,11 +293,12 @@ body {
 
 .address {
   color: #32425c;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   display: flex;
   margin-top: 0;
-  padding-left: 15px;
+  padding-left: 11px;
 }
 
 .user-navigation-index {
@@ -428,8 +428,8 @@ body {
   color: #ffffff;
   background-color: #32425c;
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
   min-height: 60px;
@@ -441,16 +441,12 @@ body {
   text-decoration: none;
   padding-left: 31px;
   padding-right: 31px;
-  padding-top: 22px;
-  padding-bottom: 26px;
-  display: flex;
-  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .list-navigation li {
   list-style: none;
-  display: flex;
-  align-items: center;
 }
 
 .list-navigation li a:hover {
@@ -484,7 +480,7 @@ body {
 }
 
 .title-button {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 .navigation-cards-title {
@@ -492,9 +488,10 @@ body {
   color: #ffffff;
   font-size: 24px;
   line-height: 30px;
-  margin-top: 14px;
+  font-weight: 400;
+  margin-top: 20px;
   margin-left: 23px;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
 
 .navigation-cards-button {
@@ -607,7 +604,8 @@ body {
   color: #ffffff;
   font-size: 36px;
   line-height: 36px;
-  margin-top: 27px;
+  text-transform: uppercase;
+  margin-top: 25px;
   margin-bottom: 0;
 }
 
@@ -620,7 +618,7 @@ body {
   padding: 14px 45px 14px 49px;
   text-decoration: none;
   text-transform: uppercase;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .navigation-card-button:hover {
@@ -635,7 +633,7 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   font-size: 18px;
-  margin-top: 8px;
+  margin-top: 0px;
 }
 
 .slider-button-back {
@@ -667,11 +665,9 @@ body {
   background-color: #f9f5f0;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-top: 53px;
-  padding-top: 30px;
-  padding-bottom: 34px;
-  padding-left: 30px;
+  align-items: center;
+  margin-top: 54px;
+  padding-left: 28px;
 }
 
 .title {
@@ -692,8 +688,7 @@ body {
   background-color: #ee3643;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 14px 40px 12px 41px;
-  text-align: center;
+  padding: 14px 55px;
   margin-right: 24px;
 }
 
@@ -702,6 +697,27 @@ body {
 }
 
 .button-index-popular:hover {
+  background-color: #ca2c37;
+}
+
+.button-index-brands {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 70px;
+  text-align: center;
+  margin-right: 24px;
+}
+
+.button-index-brands:active {
+  background-color: #ba2732;
+}
+
+.button-index-brands:hover {
   background-color: #ca2c37;
 }
 
@@ -817,6 +833,10 @@ body {
   border: 3px solid #32425c;
 }
 
+.perforator-heading {
+  margin: 0;
+}
+
 .heading {
   font-size: 18px;
   line-height: 20px;
@@ -842,6 +862,7 @@ body {
   text-decoration: line-through;
   font-weight: bold;
   color: #999999;
+  margin-top: 10px;
   margin-bottom: 13px;
 }
 
@@ -875,9 +896,18 @@ body {
   border-left-color: #ee3643;
 }
 
+.title-wrapper-brands {
+  background-color: #f9f5f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  padding-left: 28px;
+}
+
 .popular-brands {
   display: flex;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .brands-items {
@@ -911,6 +941,8 @@ body {
   flex-direction: column;
   background-color: #f4f7f9;
   margin-top: 85px;
+  padding-bottom: 80px;
+  margin-bottom: 45px;
 }
 
 .heading-index {
@@ -919,7 +951,7 @@ body {
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 68px;
+  margin-bottom: 25px;
 }
 
 .services-cards {
@@ -937,12 +969,11 @@ body {
   color: #ffffff;
   background-color: #32425c;
   padding: 0;
-  margin-top: 53px;
-  margin-bottom: 99px;
+  margin-top: 57px;
 }
 
 .services-button {
-  padding: 21px 140px 21px 22px;
+  padding: 16px 140px 16px 22px;
   list-style: none;
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
 }
@@ -965,7 +996,7 @@ body {
   color: #32425c;
   text-transform: uppercase;
   margin-top: 53px;
-  margin-bottom: 34px;
+  margin-bottom: 27px;
 }
 
 .slide-paragraph {
@@ -973,12 +1004,13 @@ body {
   flex-direction: column;
   font-size: 13px;
   line-height: 24px;
-  margin-bottom: 31px;
   margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .delivery-paragraph {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-left: 80px;
   width: 100%;
@@ -988,7 +1020,7 @@ body {
   content: "";
   position: absolute;
   right: 0;
-  bottom: 20px;
+  top: 80px;
   width: 468px;
   height: 261px;
   background-image: url("../img/truck.png");
@@ -997,6 +1029,7 @@ body {
 
 .guarantee-paragraph {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-left: 80px;
   width: 100%;
@@ -1007,7 +1040,7 @@ body {
   content: "";
   position: absolute;
   right: 0;
-  bottom: 20px;
+  top: 50px;
   width: 389px;
   height: 283px;
   background-image: url("../img/guarantee.png");
@@ -1016,6 +1049,7 @@ body {
 
 .credit-paragraph {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-left: 80px;
   width: 100%;
@@ -1026,7 +1060,7 @@ body {
   content: "";
   position: absolute;
   right: 0;
-  bottom: 20px;
+  top: 50px;
   width: 465px;
   height: 285px;
   background-image: url("../img/credit.png");
@@ -1070,7 +1104,7 @@ body {
   justify-content: space-between;
   align-items: baseline;
   margin-top: 0;
-  margin-bottom: 56px;
+  margin-bottom: 42px;
 }
 
 .about-business {
@@ -1082,20 +1116,20 @@ body {
 .paragraph {
   display: flex;
   flex-direction: column;
-  margin-top: 37px;
+  margin-top: 25px;
 }
 
 .list-about {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
-  margin: 0 0 37px;
+  margin-bottom: 45px;
   padding: 0;
   list-style: none;
 }
 
 .lines {
-  margin-top: 23px;
+  margin-top: 20px;
   padding-left: 36px;
   position: relative;
 }
@@ -1144,7 +1178,7 @@ body {
 .first-footer-container {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 53px;
+  padding-bottom: 50px;
 }
 
 .first-footer-info {
@@ -1157,7 +1191,7 @@ body {
   width: 138px;
   height: 23px;
   padding: 20px 41px 25px 41px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -1202,6 +1236,9 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin-left: 5px;
+  margin-top: 30px;
+
 }
 
 .list-items-footer a {
@@ -1226,6 +1263,7 @@ body {
 .special {
   display: flex;
   justify-content: space-between;
+  padding-left: 30px;
 }
 
 .special a {
@@ -1277,6 +1315,7 @@ body {
 
 .social-items {
   display: flex;
+  margin-left: 75px;
 }
 
 .social-items a {
@@ -1316,6 +1355,7 @@ body {
 .special-address {
   display: flex;
   flex-direction: column;
+  margin-right: 15px;
 }
 
 .special-address a {
@@ -1338,6 +1378,7 @@ body {
 .special-mail {
   display: flex;
   flex-direction: column;
+  margin-left: 70px;
 }
 
 .special-mail a {
