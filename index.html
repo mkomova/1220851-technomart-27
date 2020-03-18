@@ -294,39 +294,37 @@
         </div>
       </div>
     </section>
-    <section class="index-about">
-      <div class="container index-about">
-        <div class="company-business">
-          <h3 class="heading-index">Компания «Техномарт»</h3>
-          <p class="about-business">
-            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гасторбайтерах.
-          </p>
-          <p class="paragraph">
-            <span>Мы можем доставить ваш товар в самые отдаленные точки России!</span>
-            <span>Техномарт работает со многими транспортными компаниями:</span>
-          </p>
-          <ul class="list-about">
-            <li class="lines">Деловые линии</li>
-            <li class="lines">Автотрейдинг</li>
-            <li class="lines">ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="button-index" href="">Подробнее о компании</a>
-        </div>
-        <div class="company-contacts">
-          <h3 class="visually-hidden">Как до нас добраться</h3>
-          <h3 class="heading-index">Контакты</h3>
-          <p class="about">
-            <span>Вы можете забрать товар сами,</span> <span>заехав в наш офис.</span>
-          </p>
-          <div class="map">
-            <a href="map.html">
-              <img src="img/map-1.png" width="300" height="158" alt="Офис компании по адресу г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
-            </a>
-          </div>
-          <a class="button-index" href="letter.html">Заблудились? Напишите нам!</a>
-        </div>
+    <div class="container index-about">
+      <div class="company-business">
+        <h3 class="heading-index">Компания «Техномарт»</h3>
+        <p class="about-business">
+          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гасторбайтерах.
+        </p>
+        <p class="paragraph">
+          <span>Мы можем доставить ваш товар в самые отдаленные точки России!</span>
+          <span>Техномарт работает со многими транспортными компаниями:</span>
+        </p>
+        <ul class="list-about">
+          <li class="lines">Деловые линии</li>
+          <li class="lines">Автотрейдинг</li>
+          <li class="lines">ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="button-index" href="">Подробнее о компании</a>
       </div>
-    </section>
+      <div class="company-contacts">
+        <h3 class="visually-hidden">Как до нас добраться</h3>
+        <h3 class="heading-index">Контакты</h3>
+        <p class="about">
+          <span>Вы можете забрать товар сами,</span> <span>заехав в наш офис.</span>
+        </p>
+        <div class="map">
+          <a href="map.html">
+            <img src="img/map-1.png" width="300" height="158" alt="Офис компании по адресу г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
+          </a>
+        </div>
+        <a class="button-index" href="letter.html">Заблудились? Напишите нам!</a>
+      </div>
+    </div>
   </main>
   <footer class="main-footer">
     <section class="first-footer">
@@ -384,7 +382,7 @@
     </section>
   </footer>
   <div>
-    <form class="write-to-us" action="https://echo.htmlacademy.ru/courses" method="post">
+    <form class="write-to-us hide" action="https://echo.htmlacademy.ru/courses" method="post">
       <section class="popup-titles-wrap">
         <button class="close-button" type="button"><span class="visually-hidden">Закрыть форму</span></button>
         <div class="popup-name-email">
@@ -399,7 +397,7 @@
         </div>
         <div class="popup-text">
           <p class="popup-title-text">Текст письма:</p>
-          <textarea class="popup-input" rows="6" cols="40" placeholder="В свободной форме"></textarea>
+          <textarea class="popup-textarea" rows="6" cols="40" placeholder="В свободной форме"></textarea>
         </div>
       </section>
       <section class="popup-button-background">
@@ -408,7 +406,7 @@
     </form>
   </div>
   <div>
-    <form class="add-to-cart" action="https://echo.htmlacademy.ru/courses" method="post">
+    <form class="add-to-cart hide" action="https://echo.htmlacademy.ru/courses" method="post">
       <section class="popup-header">
         <button class="close-button-add" type="button"><span class="visually-hidden">Закрыть форму</span></button>
         <p class="popup-add-title">Товар добавлен в корзину!</p>
@@ -418,7 +416,7 @@
         <a class="popup-button-continue" href="inner.html">Продолжить покупки</a>
       </section>
     </form>
-    <section class="map-popup">
+    <section class="map-popup hide">
       <img src="img/map.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <button class="close-map-button" type="button"><span class="visually-hidden">Закрыть карту</span></button>
     </section>
