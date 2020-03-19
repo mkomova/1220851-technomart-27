@@ -1682,10 +1682,6 @@ body {
   fill: #b5b5b5;
 }
 
-.radio-off-icon:disabled {
-  opacity: 0.3;
-}
-
 .radio-on-icon {
   position: absolute;
   top: -3px;
@@ -1697,11 +1693,19 @@ body {
   fill: #b5b5b5;
 }
 
-.radio-on-icon:disabled {
+.radio:disabled ~ .radio-off-icon{
   opacity: 0.3;
 }
 
-.radio:checked + .radio-on-icon {
+.radio:disabled ~ .radio-on-icon{
+  opacity: 0.3;
+}
+
+.radio:disabled ~ .battery{
+  opacity: 0.4;
+}
+
+.radio:checked ~ .radio-on-icon {
   display: flex;
 }
 
@@ -1719,10 +1723,6 @@ body {
   fill: #b5b5b5;
 }
 
-.checkbox-off-icon:disabled {
-  opacity: 0.3;
-}
-
 .checkbox-on-icon {
   position: absolute;
   top: -3px;
@@ -1734,11 +1734,19 @@ body {
   fill: #b5b5b5;
 }
 
-.checkbox-on-icon:disabled {
+.checkbox:disabled ~ .checkbox-on-icon {
   opacity: 0.3;
 }
 
-.checkbox:checked + .checkbox-on-icon {
+.checkbox:disabled ~ .checkbox-off-icon {
+  opacity: 0.3;
+}
+
+.checkbox:disabled ~ .brand-name{
+  opacity: 0.4;
+}
+
+.checkbox:checked ~ .checkbox-on-icon {
   display: flex;
 }
 
