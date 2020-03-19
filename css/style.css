@@ -17,7 +17,7 @@ body {
 
 /*Шапка*/
 
-.list-items-wrapper  {
+.list-items-wrapper {
   color: #ffffff;
   background-color: #293449;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -349,7 +349,7 @@ body {
   left: 14px;
 }
 
-.login-icon:hover path{
+.login-icon:hover path {
   fill: #32425c;
 }
 
@@ -1693,15 +1693,15 @@ body {
   fill: #b5b5b5;
 }
 
-.radio:disabled ~ .radio-off-icon{
+.radio:disabled ~ .radio-off-icon {
   opacity: 0.3;
 }
 
-.radio:disabled ~ .radio-on-icon{
+.radio:disabled ~ .radio-on-icon {
   opacity: 0.3;
 }
 
-.radio:disabled ~ .battery{
+.radio:disabled ~ .battery {
   opacity: 0.4;
 }
 
@@ -1742,7 +1742,7 @@ body {
   opacity: 0.3;
 }
 
-.checkbox:disabled ~ .brand-name{
+.checkbox:disabled ~ .brand-name {
   opacity: 0.4;
 }
 
