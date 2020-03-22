@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
         </a>
         <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="get">
           <input class="search" type="search" placeholder="Поиск:">
-          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path class="search-icon-path" fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
         </form>
         <a class="list-item-add-marker" href="">Закладки: <span> 0</span></a>
         <a class="list-item-add-cart" href="">Корзина: <span> 0</span></a>
@@ -27,7 +27,7 @@
       <div class="text-wrapper container">
         <div class="middle-header">
           <p class="caption">
-            <span>Интернет-магазин</span> <span>строительных материалов</span> <span>и инструментов для ремонта</span>
+            Интернет-магазин строительных материалов и инструментов для ремонта
           </p>
           <div class="phone-address">
             <a class="phone" href="tel:+78125550555">
@@ -88,7 +88,19 @@
             <p class="navigation-card-lead">Соседям на радость!</p>
             <button class="slider-button-back" type="button"><span class="visually-hidden">Назад</span></button>
             <button class="slider-button-next" type="button"><span class="visually-hidden">Вперед</span></button>
-            <a class="navigation-card-button" href="inner.html">Открыть каталог</a>
+            <div class="button-radio-section">
+              <a class="navigation-card-button" href="inner.html">Открыть каталог</a>
+              <div class="radio-buttons-section">
+                <p class="radio-buttons">
+                  <input type="radio" class="radio-slider" id="main_image_second" name="slider" value="drill">
+                  <label for="main_image_second" class="radio-buttons-label"></label>
+                </p>
+                <p class="radio-buttons">
+                  <input type="radio" class="radio-slider" id="main_image_first" name="slider" value="perforators" checked="checked">
+                  <label for="main_image_first" class="radio-buttons-label"></label>
+                </p>
+              </div>
+            </div>
           </div>
           <div class="main-image-second">
             <h3 class="navigation-card-title">Перфораторы</h3>
@@ -124,7 +136,7 @@
         <ul class="perforator-items-index">
           <li class="perforator-item-index">
             <a class="perforator-item-img" href="">
-              <img src="img/Perforator_9000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+              <img src="img/perforator_9000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
             </a>
             <div class="buy-marker">
               <a class="buy" href="add.html">Купить</a>
@@ -145,7 +157,7 @@
           </li>
           <li class="perforator-item-index">
             <a class="perforator-item-img" href="">
-              <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+              <img src="img/perforator_3000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
             </a>
             <div class="buy-marker">
               <a class="buy" href="add.html">Купить</a>
@@ -166,7 +178,7 @@
           </li>
           <li class="perforator-item-index">
             <a class="perforator-item-img" href="">
-              <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+              <img src="img/perforator_6000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
             </a>
             <div class="buy-marker">
               <a class="buy" href="add.html">Купить</a>
@@ -187,7 +199,7 @@
           </li>
           <li class="perforator-item-index new-flag">
             <a class="perforator-item-img" href="">
-              <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+              <img src="img/perforator_2000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
             </a>
             <div class="buy-marker">
               <a class="buy" href="add.html">Купить</a>
@@ -219,12 +231,12 @@
           </li>
           <li class="brand-item">
             <a href="">
-              <img src="img/company-logo/Makita.png" width="123" height="40" alt="Логотип Makita">
+              <img src="img/company-logo/makita.png" width="123" height="40" alt="Логотип Makita">
             </a>
           </li>
           <li class="brand-item">
             <a href="">
-              <img src="img/company-logo/DeWalt.png" width="146" height="44" alt="Логотип DeWalt">
+              <img src="img/company-logo/dewalt.png" width="146" height="44" alt="Логотип DeWalt">
             </a>
           </li>
           <li class="brand-item">
@@ -234,22 +246,22 @@
           </li>
           <li class="brand-item">
             <a href="">
-              <img src="img/company-logo/Hitachi.png" width="169" height="31" alt="Логотип Hitachi">
+              <img src="img/company-logo/hitachi.png" width="169" height="31" alt="Логотип Hitachi">
             </a>
           </li>
           <li class="brand-item">
             <a href="">
-              <img src="img/company-logo/LG.png" width="121" height="73" alt="Логотип LG">
+              <img src="img/company-logo/lg.png" width="121" height="73" alt="Логотип LG">
             </a>
           </li>
           <li class="brand-item">
             <a href="">
-              <img src="img/company-logo/AEG.png" width="151" height="96" alt="Логотип AEG">
+              <img src="img/company-logo/aeg.png" width="151" height="96" alt="Логотип AEG">
             </a>
           </li>
           <li class="brand-item">
             <a href="">
-              <img src="img/company-logo/Metabo.png" width="204" height="69" alt="Логотип metabo">
+              <img src="img/company-logo/metabo.png" width="204" height="69" alt="Логотип metabo">
             </a>
           </li>
         </ul>
@@ -259,8 +271,10 @@
       <div class="container">
         <h3 class="heading-index">Сервисы</h3>
         <p class="slide-paragraph">
-          <span>Хороший интернет-магазин отличается от плохого не только ценами!</span>
-          <span>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</span>
+          Хороший интернет-магазин отличается от плохого не только ценами!
+        </p>
+        <p class="slide-paragraph">
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <div class="services-cards">
           <ul class="services-buttons">
@@ -271,8 +285,10 @@
           <div class="delivery-paragraph">
             <h2 class="slide-title">Доставка</h2>
             <p class="slide-paragraph">
-              <span>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!</span>
-              <span>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</span>
+              Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!
+            </p>
+            <p class="slide-paragraph">
+              Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!
             </p>
           </div>
           <div class="guarantee-paragraph">
@@ -286,7 +302,7 @@
           <div class="credit-paragraph">
             <h4 class="slide-title">Кредит</h4>
             <p class="slide-paragraph">
-              Залезть в долговую яму стало проще!<br>
+              Залезть в долговую яму стало проще!
               Кредитные консультанты придут вам на помощь.
             </p>
             <a class="button-index-credit" href="">Отправить заявку</a>
@@ -301,8 +317,8 @@
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гасторбайтерах.
         </p>
         <p class="paragraph">
-          <span>Мы можем доставить ваш товар в самые отдаленные точки России!</span>
-          <span>Техномарт работает со многими транспортными компаниями:</span>
+          Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="list-about">
           <li class="lines">Деловые линии</li>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
         </a>
         <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="get">
           <input class="search" type="search" placeholder="Поиск:">
-          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path class="search-icon-path" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
         </form>
         <a class="list-item-add-marker" href="">Закладки: <span> 0</span></a>
         <a class="list-item-add-cart active" href="">Корзина: <span> 10</span></a>
@@ -27,7 +27,7 @@
       <div class="text-wrapper container">
         <div class="middle-header">
           <p class="caption">
-            <span>Интернет-магазин</span> <span>строительных материалов</span> <span>и инструментов для ремонта</span>
+            Интернет-магазин строительных материалов и инструментов для ремонта
           </p>
           <div class="phone-address">
             <a class="phone" href="tel:+78125550555">
@@ -165,13 +165,16 @@
               <li><a class="options active" href="">По цене</a></li>
               <li><a class="options type" href="">По типу</a></li>
               <li><a class="options function" href="">По функционалу</a></li>
+            </ul>
+            <ul class="filter-sorting">
               <li><a class="up" href="">
                 <svg class="up-icon active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                <span class="visually-hidden">По возрастанию</span>
               </a></li>
               <li><a class="down" href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/>
                 </svg>
+                <span class="visually-hidden">По убыванию</span>
               </a></li>
             </ul>
           </section>
@@ -179,7 +182,7 @@
           <ul class="perforator-items">
             <li class="perforator-item">
               <a class="perforator-item-img" href="">
-                <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+                <img src="img/perforator_3000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
               </a>
               <div class="buy-marker">
                 <a class="buy" href="add.html">Купить</a>
@@ -200,7 +203,7 @@
             </li>
             <li class="perforator-item">
               <a class="perforator-item-img" href="">
-                <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+                <img src="img/perforator_6000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
               </a>
               <div class="buy-marker">
                 <a class="buy" href="add.html">Купить</a>
@@ -221,7 +224,7 @@
             </li>
             <li class="perforator-item new-flag">
               <a class="perforator-item-img" href="">
-                <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+                <img src="img/perforator_2000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
               </a>
               <div class="buy-marker">
                 <a class="buy" href="add.html">Купить</a>
@@ -239,7 +242,7 @@
             </li>
             <li class="perforator-item">
               <a class="perforator-item-img" href="">
-                <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+                <img src="img/perforator_3000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
               </a>
               <div class="buy-marker">
                 <a class="buy" href="add.html">Купить</a>
@@ -260,7 +263,7 @@
             </li>
             <li class="perforator-item new-flag">
               <a class="perforator-item-img" href="">
-                <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+                <img src="img/perforator_6000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
               </a>
               <div class="buy-marker">
                 <a class="buy" href="add.html">Купить</a>
@@ -281,7 +284,7 @@
             </li>
             <li class="perforator-item">
               <a class="perforator-item-img" href="">
-                <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+                <img src="img/perforator_2000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
               </a>
               <div class="buy-marker">
                 <a class="buy" href="add.html">Купить</a>
@@ -299,7 +302,7 @@
             </li>
             <li class="perforator-item new-flag">
               <a class="perforator-item-img" href="">
-                <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+                <img src="img/perforator_3000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
               </a>
               <div class="buy-marker">
                 <a class="buy" href="add.html">Купить</a>
@@ -320,7 +323,7 @@
             </li>
             <li class="perforator-item">
               <a class="perforator-item-img" href="">
-                <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+                <img src="img/perforator_6000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
               </a>
               <div class="buy-marker">
                 <a class="buy" href="add.html">Купить</a>
@@ -341,7 +344,7 @@
             </li>
             <li class="perforator-item">
               <a class="perforator-item-img" href="">
-                <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
+                <img src="img/perforator_2000.jpg" width="218" height="170" alt="Здесь должно быть изображение перфоратора">
               </a>
               <div class="buy-marker">
                 <a class="buy" href="add.html">Купить</a>
@@ -374,110 +377,108 @@
         <div class="about-perforator">
           <h3 class="about-perforator-title">Пара слов о перфораторах</h3>
           <p class="about-perforator-paragraph">
-            <span>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-              бетоне и камне.</span>
-              <span>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
-                функции дрели, шуруповерта и отбойного молотка.</span>
-                <span> В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</span>
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="main-footer">
-        <section class="first-footer">
-          <div class="container first-footer-container">
-            <div class="first-footer-info">
-              <a class="footer-logo" href="index.html">
-                <img src="img/icons-svg/logo-technomart.svg" width="138" height="23" alt="Логотип магазина Техномарт">
-              </a>
-              <div class="footer-contacts">
-                <p class="footer-address">
-                  <span class="visually-hidden">Адрес:</span><span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                </p>
-                <a class="footer-phone" href="tel:+78125550555">
-                  <span class="visually-hidden">Телефон:</span>+7 (812) 555-05-55
-                </a>
-              </div>
-            </div>
-            <div class="first-footer-navigation">
-              <ul class="list-items-footer">
-                <li><a href="">Компания</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="inner.html">Каталог</a></li>
-                <li><a href="">Доставка</a></li>
-                <li><a href="">Контакты</a></li>
-              </ul>
-              <ul class="special">
-                <li><a href="">Материалы</a></li>
-                <li><a href="">Техника</a></li>
-                <li><a href="">Инструмент</a></li>
-                <li><a href="">Спецпредложения</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="second-footer">
-          <div class="container second-footer">
-            <p class="copyright">
-              <span>© 2010-2019 Компания «Техномарт»</span>
-              <span>Все права защищены</span>
-            </p>
-            <ul class="social-items">
-              <li><a class="social social-vk" href="https://vk.com/htmlacademy"></a></li>
-              <li><a class="social social-fb" href="https://www.facebook.com/htmlacademy"></a></li>
-              <li><a class="social social-insta" href="https://www.instagram.com/htmlacademy/?hl=ru"></a></li>
-            </ul>
-            <p class="special-mail">
-              Обратная связь:
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-            <p class="special-address">
-              Разработано -
-              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-            </p>
-          </div>
-        </section>
-      </footer>
-      <div>
-        <form class="write-to-us" action="https://echo.htmlacademy.ru/courses" method="post">
-          <section class="popup-titles-wrap">
-            <button class="close-button" type="button"><span class="visually-hidden">Закрыть форму</span></button>
-            <div class="popup-name-email">
-              <div class="popup-title-name">
-                <p>Ваше имя:</p>
-                <input class="popup-input" type="text" name="username" placeholder="Имя Фамилия">
-              </div>
-              <div class="popup-title-email">
-                <p>Ваш e-mail:</p>
-                <input class="popup-input" type="text" name="email" placeholder="email@example.com">
-              </div>
-            </div>
-            <div class="popup-text">
-              <p class="popup-title-text">Текст письма:</p>
-              <textarea class="popup-textarea" rows="6" cols="40" placeholder="В свободной форме"></textarea>
-            </div>
-          </section>
-          <section class="popup-button-background">
-            <input class="popup-button" type="submit" value="Отправить">
-          </section>
-        </form>
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
       </div>
-      <div>
-        <form class="add-to-cart" action="https://echo.htmlacademy.ru/courses" method="post">
-          <section class="popup-header">
-            <button class="close-button-add" type="button"><span class="visually-hidden">Закрыть форму</span></button>
-            <p class="popup-add-title">Товар добавлен в корзину!</p>
-          </section>
-          <section class="popup-button-background">
-            <a class="popup-button-buy" href="">Оформить заказ</a>
-            <a class="popup-button-continue" href="inner.html">Продолжить покупки</a>
-          </section>
-        </form>
-        <section class="map-popup">
-          <img src="img/map.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          <button class="close-map-button" type="button"><span class="visually-hidden">Закрыть карту</span></button>
-        </section>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <section class="first-footer">
+      <div class="container first-footer-container">
+        <div class="first-footer-info">
+          <a class="footer-logo" href="index.html">
+            <img src="img/icons-svg/logo-technomart.svg" width="138" height="23" alt="Логотип магазина Техномарт">
+          </a>
+          <div class="footer-contacts">
+            <p class="footer-address">
+              <span class="visually-hidden">Адрес:</span><span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+            </p>
+            <a class="footer-phone" href="tel:+78125550555">
+              <span class="visually-hidden">Телефон:</span>+7 (812) 555-05-55
+            </a>
+          </div>
+        </div>
+        <div class="first-footer-navigation">
+          <ul class="list-items-footer">
+            <li><a href="">Компания</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="inner.html">Каталог</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+          <ul class="special">
+            <li><a href="">Материалы</a></li>
+            <li><a href="">Техника</a></li>
+            <li><a href="">Инструмент</a></li>
+            <li><a href="">Спецпредложения</a></li>
+          </ul>
+        </div>
       </div>
-    </body>
-    </html>
+    </section>
+    <section class="second-footer">
+      <div class="container second-footer">
+        <p class="copyright">
+          <span>© 2010-2019 Компания «Техномарт»</span>
+          <span>Все права защищены</span>
+        </p>
+        <ul class="social-items">
+          <li><a class="social social-vk" href="https://vk.com/htmlacademy"></a></li>
+          <li><a class="social social-fb" href="https://www.facebook.com/htmlacademy"></a></li>
+          <li><a class="social social-insta" href="https://www.instagram.com/htmlacademy/?hl=ru"></a></li>
+        </ul>
+        <p class="special-mail">
+          Обратная связь:
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <p class="special-address">
+          Разработано -
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </p>
+      </div>
+    </section>
+  </footer>
+  <div>
+    <form class="write-to-us" action="https://echo.htmlacademy.ru/courses" method="post">
+      <section class="popup-titles-wrap">
+        <button class="close-button" type="button"><span class="visually-hidden">Закрыть форму</span></button>
+        <div class="popup-name-email">
+          <div class="popup-title-name">
+            <p>Ваше имя:</p>
+            <input class="popup-input" type="text" name="username" placeholder="Имя Фамилия">
+          </div>
+          <div class="popup-title-email">
+            <p>Ваш e-mail:</p>
+            <input class="popup-input" type="text" name="email" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="popup-text">
+          <p class="popup-title-text">Текст письма:</p>
+          <textarea class="popup-textarea" rows="6" cols="40" placeholder="В свободной форме"></textarea>
+        </div>
+      </section>
+      <section class="popup-button-background">
+        <input class="popup-button" type="submit" value="Отправить">
+      </section>
+    </form>
+  </div>
+  <div>
+    <form class="add-to-cart" action="https://echo.htmlacademy.ru/courses" method="post">
+      <section class="popup-header">
+        <button class="close-button-add" type="button"><span class="visually-hidden">Закрыть форму</span></button>
+        <p class="popup-add-title">Товар добавлен в корзину!</p>
+      </section>
+      <section class="popup-button-background">
+        <a class="popup-button-buy" href="">Оформить заказ</a>
+        <a class="popup-button-continue" href="inner.html">Продолжить покупки</a>
+      </section>
+    </form>
+    <section class="map-popup">
+      <img src="img/map.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <button class="close-map-button" type="button"><span class="visually-hidden">Закрыть карту</span></button>
+    </section>
+  </div>
+</body>
+</html>
