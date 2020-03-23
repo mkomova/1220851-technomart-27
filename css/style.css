@@ -408,6 +408,7 @@ body {
 .user-navigation-dop {
   margin-left: 20px;
   margin-top: 8px;
+  position: relative;
 }
 
 .information-link {
@@ -418,11 +419,39 @@ body {
   padding-right: 29px;
 }
 
+.information-link-orders {
+  position: relative;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+  padding-right: 29px;
+}
+
+.information-link-orders:after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 90px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #32425c;
+}
+
 .information-link:hover {
   color: #ee3643;
 }
 
 .information-link:active {
+  color: #c5c5c5;
+}
+
+.information-link-orders:hover {
+  color: #ee3643;
+}
+
+.information-link-orders:active {
   color: #c5c5c5;
 }
 
@@ -1743,16 +1772,16 @@ body {
 }
 
 .price-controls input {
+  font-size: 17px;
+  line-height: 18px;
   position: relative;
   width: 95px;
   height: 38px;
-  padding: 0px;
-  margin: 0px;
   text-align: center;
   background-color: #f7f3ec;
   border: none;
-  font-size: 17px;
-  line-height: 18px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .price-controls .max-price {
@@ -1766,8 +1795,8 @@ body {
   width: 10px;
   height: 1px;
   background-color:#444444;
-  top: 50%;
-  left: 0%;
+  top: 19px;
+  left: 0;
   margin-left: -20px;
   margin-top: -1px;
 }
@@ -1937,12 +1966,12 @@ body {
 }
 
 .filter-price-option {
-  position: relative;
   display: flex;
   align-items: center;
   padding: 0;
-  margin: 0;
   min-height: 38px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .filter-price-option li {
@@ -1950,9 +1979,10 @@ body {
 }
 
 .options {
+  font-size: 13px;
+  line-height: 18px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.18);
   border-bottom: 1px dotted #ee3643;
@@ -1965,7 +1995,7 @@ body {
 }
 
 .type {
-  margin-left: 68px;
+  margin-left: 70px;
 }
 
 .function {
@@ -1986,10 +2016,12 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0;
-  margin: 0;
   min-height: 38px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: 19px;
 }
 
 .filter-sorting li {
@@ -1998,19 +2030,19 @@ body {
 
 .up {
   position: relative;
-  margin-left: 49px;
 }
 
 .up-icon {
   position: relative;
   opacity: 0.3;
+  fill: #231F20;
 }
 
 .up-icon:hover {
   opacity: 1;
 }
 
-.up-icon.active path {
+.up-icon.active {
   fill: #ee3643;
 }
 
@@ -2020,8 +2052,7 @@ body {
 
 .down {
   opacity: 0.3;
-  margin-left: 21px;
-  margin-right: 17px;
+  margin-left: 20px;
 }
 
 .down:hover {
@@ -2385,7 +2416,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   top: 8px;
-  right: 510px;
+  right: 8px;
   width: 21px;
   height: 21px;
   border: none;
