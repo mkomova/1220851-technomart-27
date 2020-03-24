@@ -941,8 +941,8 @@ body {
   background: #ffffff;
   flex-direction: column;
   width: 135px;
-  top: 44px;
-  left: 42px;
+  top: 43px;
+  left: 40px;
 }
 
 .buy {
@@ -953,7 +953,7 @@ body {
   color: #ffffff;
   background-color: #63a63e;
   padding: 10px 45px 10px 49px;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   box-shadow: inset 0px -3px 0 0 #367315;
   border-radius: 3px;
 }
@@ -992,7 +992,7 @@ body {
   color: #32425c;
   text-transform: uppercase;
   border: 3px solid #63a63e;
-  padding: 9px 29px 7px 30px;
+  padding: 8px 29px 6px 32px;
   border-radius: 3px;
 }
 
@@ -1620,7 +1620,7 @@ body {
 .special-mail {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
+  margin-left: 67px;
 }
 
 .special-mail a {
@@ -1654,7 +1654,7 @@ body {
   padding-left: 0;
   position: relative;
   margin-top: 20px;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 }
 
 .items a {
@@ -1732,7 +1732,7 @@ body {
 
 .title-wrapper-catalog {
   background-color: #f4f7f9;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1867,6 +1867,7 @@ body {
   text-transform: uppercase;
   border-top: 1px solid #e5e5e5;
   padding-top: 16px;
+  margin-bottom: 15px;
 }
 
 .filter-option {
@@ -1896,7 +1897,8 @@ body {
   text-transform: uppercase;
   border-top: 1px solid #e5e5e5;
   margin-top: 0px;
-  padding-top: 16px;
+  padding-top: 19px;
+  margin-bottom: 14px;
 }
 
 .filter-radio {
@@ -1994,9 +1996,9 @@ body {
   text-transform: uppercase;
   background-color: #ffffff;
   align-self: flex-start;
-  margin-top: 54px;
+  margin-top: 57px;
   border: 1px solid #e5e5e5;
-  padding: 10px 39px 10px 39px;
+  padding: 10px 39px 8px 39px;
   outline: none;
   border-radius: 3px;
 }
@@ -2249,6 +2251,7 @@ body {
 .about-perforator-paragraph {
   display: flex;
   flex-direction: column;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin: 0;
